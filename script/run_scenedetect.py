@@ -1,3 +1,11 @@
+# ------------------------------------------------------------------------------
+# Copyright 2019 ETRI. All rights reserved.
+# Licensed under the BSD 3-Clause License.
+# This file is part of Youtube-Gesture-Dataset, a sub-project of AIR(AI for Robots) project.
+# You can refer to details of AIR project at https://aiforrobots.github.io
+# Written by Youngwoo Yoon (youngwoo@etri.re.kr)
+# ------------------------------------------------------------------------------
+
 from __future__ import unicode_literals
 import subprocess
 import glob

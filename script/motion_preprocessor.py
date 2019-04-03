@@ -1,3 +1,11 @@
+# ------------------------------------------------------------------------------
+# Copyright (c) ETRI. All rights reserved.
+# Licensed under the BSD 3-Clause License.
+# This file is part of Youtube-Gesture-Dataset, a sub-project of AIR(AI for Robots) project.
+# You can refer to details of AIR project at https://aiforrobots.github.io
+# Written by Youngwoo Yoon (youngwoo@etri.re.kr)
+# ------------------------------------------------------------------------------
+
 from scipy.signal import savgol_filter
 import numpy as np
 from scipy.stats import circvar
