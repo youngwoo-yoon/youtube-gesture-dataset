@@ -6,7 +6,7 @@ Please see the project page and paper for the details.
  
 [[Project page]](https://sites.google.com/view/youngwoo-yoon/projects/co-speech-gesture-generation) [[Paper]](https://arxiv.org/abs/1810.12541)
 
-If you have any questions or comments, please feel free to contact me. 
+If you have any questions or comments, please feel free to contact me by email ([youngwoo@etri.re.kr](mailto:youngwoo@etri.re.kr)).
 
 ## Environment
 
@@ -80,7 +80,7 @@ Running whole data collection pipeline is complex and takes several days, so we 
 [[z02]](https://drive.google.com/open?id=1B2SOnb_nTyJua9sII4w3xBjp5hBLRcAj) 
 [[z03]](https://drive.google.com/open?id=1uhfv6k0Q3E7bUIxYDAVjxKIjPM_gL8Wm)
 [[z04]](https://drive.google.com/open?id=1VLi0oQBW8xetN7XmkGZ-S_KhD-DvbVQB)
-[[z05]](https://drive.google.com/open?id=1F2wiRX421f3hiUkEeKcTBbtsgOEBy7lh) (split zip files, total 80.9 GB) 
+[[z05]](https://drive.google.com/open?id=1F2wiRX421f3hiUkEeKcTBbtsgOEBy7lh) (split zip files, total 80.9 GB)  
 The result of Step 3. It contains the extracted human poses for all frames. 
 * [[ted_shots_of_interest.zip, 13.3 GB]](https://drive.google.com/open?id=1kF7SVpxzhYEHCoSPpUt6aqSKvl9YaTEZ)  
 The result of Step 6. It contains shot segmentation results ({video_id}.csv files) and shots of interest ({video_id}.json files). 
