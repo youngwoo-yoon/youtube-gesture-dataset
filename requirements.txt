@@ -7,4 +7,6 @@ Pillow
 google-api-python-client
 webvtt-py
 youtube-dl
+scenedetect
+
 
