@@ -17,6 +17,7 @@ from tqdm import tqdm
 
 from config import *
 from make_ted_dataset import read_subtitle
+from config import my_config
 
 sys.path.insert(0, '../../../gentle')
 import gentle
@@ -48,12 +49,12 @@ def run_gentle(video_path, vid, result_path):
 
 
 def main():
-    videos = glob.glob(VIDEO_PATH + "/*.mp4")
+    videos = glob.glob(my_config.VIDEO_PATH + "/*.mp4")
     n_total = len(videos)
     for i, file_path in tqdm(enumerate(sorted(videos, key=os.path.getmtime))):
         vid = os.path.split(file_path)[1][-15:-4]
         print('{}/{} - {}'.format(i+1, n_total, vid))
-        result_path = VIDEO_PATH + '/' + vid + '_align_results.json'
+        result_path = my_config.VIDEO_PATH + '/' + vid + '_align_results.json'
         if os.path.exists(result_path) and os.path.getsize(result_path):  # existing and not empty
             print('JSON file already exists ({})'.format(vid))
         else:
