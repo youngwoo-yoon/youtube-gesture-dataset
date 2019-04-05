@@ -17,7 +17,8 @@ The scripts are tested on Ubuntu 16.04 LTS and Python 3.5.2.
 * [OpenCV](https://pypi.org/project/opencv-python/) (v3.4) for video read
   * We uses FFMPEG. Use latest pip version of opencv-python or build OpenCV with FFMPEG.
 * [Gentle](https://github.com/lowerquality/gentle) (Jan. 2019 version) for transcript alignment
-  * Add an option `-vn` to resample.py as follows:
+  * Download the source code from Gentle github and run ./install.sh. And then, you can import gentle library by specifying the path to the library. See `run_gentle.py`.
+  * Add an option `-vn` to resample.py in gentle as follows:
     ```python
     cmd = [
         FFMPEG,
