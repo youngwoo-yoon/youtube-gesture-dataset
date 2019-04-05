@@ -14,7 +14,7 @@ from data_utils import *
 from config import *
 import numpy as np
 import enum
-
+from config import my_config
 
 review_img_width = 3000
 review_img_height = 1500
@@ -157,7 +157,7 @@ class ReviewApp:
         self.vid_tree.grid(row=0, column=0, sticky='nsew', padx=5, pady=5)
         self.vid_tree.heading("#0", text="Video List")
 
-        for file in sorted(glob.glob(VIDEO_PATH + "/*.mp4"), key=os.path.getmtime):
+        for file in sorted(glob.glob(my_config.VIDEO_PATH + "/*.mp4"), key=os.path.getmtime):
             vid = os.path.split(file)[1][-15:-4]
             self.vid_tree.insert('', 'end', text=vid, values=vid, iid=vid)
 
@@ -211,8 +211,8 @@ class ReviewApp:
         print(vid)
 
         self.clip_data = load_clip_data(vid)
-        self.skeleton = SkeletonWrapper(SKELETON_PATH, vid)
-        self.video_wrapper = read_video(VIDEO_PATH, vid)
+        self.skeleton = SkeletonWrapper(my_config.SKELETON_PATH, vid)
+        self.video_wrapper = read_video(my_config.VIDEO_PATH, vid)
         self.clip_filter_data = load_clip_filtering_aux_info(vid)
 
         self.load_clip()
