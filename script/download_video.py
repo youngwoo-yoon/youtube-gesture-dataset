@@ -152,12 +152,21 @@ def download(vid_list):
                         traceback.print_exc()
                         continue
                     else:
+                        def get_subtitle_url(subtitles, language, ext):
+                            subtitles = subtitles.get(language)
+                            url = None
+                            for sub in subtitles:
+                                if sub.get('ext') == ext:
+                                    url = sub.get('url')
+                                    break
+                            return url
+
                         if info.get('subtitles') != {} and (info.get('subtitles')).get(language) != None:
-                            sub_url = (((info.get('subtitles')).get(language))[1]).get('url')
+                            sub_url = get_subtitle_url(info.get('subtitles'), language, 'vtt')
                             download_subtitle(sub_url, vid, language)
                             sub_count += 1
                         if info.get('automatic_captions') != {}:
-                            auto_sub_url = (((info.get('automatic_captions')).get(language))[1]).get('url')
+                            auto_sub_url = get_subtitle_url(info.get('automatic_captions'), language, 'vtt')
                             download_subtitle(auto_sub_url, vid, language+'-auto')
 
                         log.write("{} - downloaded\n".format(str(vid)))
