@@ -113,6 +113,9 @@ If our code or dataset is helpful, please kindly cite the following paper:
 }
 ```
 
+## Related Projects
+Speech Gesture Generation from the Trimodal Context of Text, Audio, and Speaker Identity (SIGGRAPH Asia 2020), https://github.com/ai4r/Gesture-Generation-from-Trimodal-Context
+
 ## Acknowledgement
 * This work was supported by the ICT R&D program of MSIP/IITP. [2017-0-00162, Development of Human-care Robot Technology for Aging Society]   
 * Thanks to [Eun-Sol Cho](https://github.com/euns2ol) and [Jongwon Kim](mailto:jwk9284@gmail.com) for contributions during their internships at ETRI.
