@@ -7,4 +7,4 @@ pyarrow==0.14.1
 google-api-python-client
 webvtt-py
 youtube-dl
-scenedetect
+scenedetect<0.6
