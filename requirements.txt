@@ -3,7 +3,7 @@ numpy
 scipy
 tqdm
 Pillow
-pyarrow==0.14.1
+pyarrow==14.0.1
 google-api-python-client
 webvtt-py
 youtube-dl
